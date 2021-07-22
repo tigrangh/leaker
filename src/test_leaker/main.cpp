@@ -1,7 +1,11 @@
 #include <leaker/test.hpp>
 
-int main()
+void caller()
 {
     leaker::test();
+}
+int main()
+{
+    caller();
     return 0;
 }
